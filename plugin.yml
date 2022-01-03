@@ -1,0 +1,17 @@
+name: PossessEm
+main: net.AptiTech.lordaragos.minecraft.PossessEm.Main
+version: 1.0
+description: >
+             A plugin that allows players to possess other players.
+commands:
+  possess:
+    description: Possesses a player }:)
+permissions:
+  PossessEm.*:
+    description: Gives access to all PossessEm actions
+    children:
+        PossessEm.possess: true
+  PossessEm.possess:
+     description: Permissions for /possess
+     default: op
+    
